@@ -1,9 +1,107 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>My blog</title>
+    <title>James' Blog</title>
+    <link href="/styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <style>
+    body {
+      background-color: rgb(36, 36, 36);
+    }
+    
+    div {
+      color: white;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .grey-red-titlebox {
+      border-color: rgb(78, 0, 0);
+      border-width: 3px;
+      border-style: solid;
+      border-radius: 10px;
+      text-align:center;
+      background-color: rgb(54, 54, 54);
+      color: white;
+      padding: 10px;
+      margin-left: 400px;
+      margin-right: 400px;
+    }
+
+    .homepage-snipit-box {
+      border-color: rgb(5, 0, 78);
+      border-width: 3px;
+      border-style: solid;
+      border-radius: 10px;
+      background-color: rgb(54, 54, 54);
+      text-align:center;
+    }
+
+    .entry-box-left {
+      margin-left: 20px;
+      margin-right: 875px;
+      margin-bottom: 50px;
+    }
+
+    .entry-box-middle {
+      margin-left: 450px;
+      margin-right: 450px;
+      margin-bottom: 50px;
+      margin-top: -183px;
+    }
+
+    .entry-box-right {
+      margin-left: 875px;
+      margin-right: 20px;
+      margin-bottom: 50px;
+      margin-top: -183px;
+    }
+
+    .tiny-image {
+      width: 50px;
+      height: auto;
+    }
+
+    .top-right-corner {
+      margin-left: 1210px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
+  </style>
+    <!--still need to figure out how to get this image inline with the following div/headings-->
+    <img class="tiny-image top-right-corner" src="https://media.giphy.com/media/YGIpIZjgxL68w/giphy.gif" alt="this was meant to be a cool gif, oh well.">
+
+
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <div style="display: inline; margin-top: 0px;">
+      <h1 class="grey-red-titlebox">Welcome To James' Blog</h1> 
+      <h3 class="center-text"> This is the homepage for my ever-evolving blog, a place for blogging as well as a testing-ground for my skills</p>
+      <h3 class="center-text"> Below you'll be able to find a breakdown of all my blog posts, give any a click to see the full blog entry. </p>
+    </div>
+
+    <a style="text-decoration:none;" href="#"> <div class="homepage-snipit-box entry-box-left">
+      <h3>entry 1</h3>
+      <p>date</p>
+      <p>entry brief</p>
+    </div>
+
+    <a style="text-decoration:none;" href="#"> <div class="homepage-snipit-box entry-box-middle">
+      <h3>entry 2</h3>
+      <p>date</p>
+      <p>entry brief</p>
+    </div>
+
+  
+    <a style="text-decoration:none;" href="#"> <div class="homepage-snipit-box entry-box-right">
+      <h3>entry 3</h3>
+      <p>date</p>
+      <p>entry brief</p>
+    </div>
+  
+
+
   </body>
 </html>
