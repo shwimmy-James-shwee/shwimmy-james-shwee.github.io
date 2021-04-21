@@ -27,8 +27,6 @@
       background-color: rgb(54, 54, 54);
       color: white;
       padding: 10px;
-      margin-left: 400px;
-      margin-right: 400px;
     }
 
     .homepage-snipit-box {
@@ -38,26 +36,25 @@
       border-radius: 10px;
       background-color: rgb(54, 54, 54);
       text-align:center;
+      width: 31vw;
+      height: 10vw;
+    }
+  
+    .close-text {
+      margin-bottom: 5px;
+      margin-top: 10px;
     }
 
-    .entry-box-left {
-      margin-left: 20px;
-      margin-right: 875px;
-      margin-bottom: 50px;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2em;
+      grid-auto-rows: auto;
     }
 
-    .entry-box-middle {
-      margin-left: 450px;
-      margin-right: 450px;
-      margin-bottom: 50px;
-      margin-top: -183px;
-    }
-
-    .entry-box-right {
-      margin-left: 875px;
-      margin-right: 20px;
-      margin-bottom: 50px;
-      margin-top: -183px;
+    .heading-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
     }
 
     .tiny-image {
@@ -65,43 +62,60 @@
       height: auto;
     }
 
-    .top-right-corner {
-      margin-left: 1210px;
-      margin-top: 5px;
-      margin-bottom: 0px;
-    }
   </style>
-    <!--still need to figure out how to get this image inline with the following div/headings-->
-    <img class="tiny-image top-right-corner" src="https://media.giphy.com/media/YGIpIZjgxL68w/giphy.gif" alt="this was meant to be a cool gif, oh well.">
-
+    
 
   <body>
-    <div style="display: inline; margin-top: 0px;">
-      <h1 class="grey-red-titlebox">Welcome To James' Blog</h1> 
-      <h3 class="center-text"> This is the homepage for my ever-evolving blog, a place for blogging as well as a testing-ground for my skills</p>
+    <div>
+      <div class="heading-grid">
+        <p><a href="https://shwimmy-james-shwee.github.io/" style="text-decoration: none; color: white;">HOME</a></p>
+        <h1 class="grey-red-titlebox">Welcome To James' Blog</h1> 
+        <img class="tiny-image" style="justify-self: right;" src="https://media.giphy.com/media/YGIpIZjgxL68w/giphy.gif" alt="this was meant to be a cool gif, oh well.">
+      </div>
+
+      <h3 class="center-text"> This is the homepage for my ever-evolving blog, a place for blogging as well as a testing-ground for my skills.</p>
       <h3 class="center-text"> Below you'll be able to find a breakdown of all my blog posts, give any a click to see the full blog entry. </p>
     </div>
 
-    <a style="text-decoration:none;" href="#"> <div class="homepage-snipit-box entry-box-left">
-      <h3>entry 1</h3>
-      <p>date</p>
-      <p>entry brief</p>
-    </div>
+    <div class="grid">
 
-    <a style="text-decoration:none;" href="#"> <div class="homepage-snipit-box entry-box-middle">
-      <h3>entry 2</h3>
-      <p>date</p>
-      <p>entry brief</p>
-    </div>
+      <!--STARTING BELOW, COPY AND PASTE NEW TEMPLATES ABOVE OLDER ONES TO CREATE A DATED LIST IN DECENDING ORDER-->
 
+      <a style="text-decoration:none;" href="#"> 
+        <div class="homepage-snipit-box ">
+          <h3 class="close-text">entry 3</h3>
+          <p class="close-text">date</p>
+          <p>entry brief</p>
+        </div>
+
+      <a style="text-decoration:none;" href="#"> 
+        <div class="homepage-snipit-box ">
+          <h3 class="close-text">A little About Me</h3>
+          <p class="close-text">21/04/21</p>
+          <p>entry brief</p>
+        </div>
+
+    
+      <a style="text-decoration:none;" href="https://shwimmy-james-shwee.github.io/blog/values-strengths-limitations.html"> 
+        <div class="homepage-snipit-box ">
+          <h3 class="close-text">My Values, Strengths, and Limitations</h3>
+          <p class="close-text">15/04/21</p>
+          <p>An informal discussion of some of my current personal characteristics.</p>
+        </div>
+    
+
+    <!--
+      <a style="text-decoration:none;" href="#"> 
+        <div class="homepage-snipit-box ">
+          <h3 class="close-text">entry 2</h3>
+          <p class="close-text">date</p>
+          <p class="close-text">entry brief</p>
+        </div>
+
+    -->
+
+    </div>
   
-    <a style="text-decoration:none;" href="#"> <div class="homepage-snipit-box entry-box-right">
-      <h3>entry 3</h3>
-      <p>date</p>
-      <p>entry brief</p>
-    </div>
-  
-
 
   </body>
 </html>
