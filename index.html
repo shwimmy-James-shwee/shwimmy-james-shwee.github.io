@@ -9,17 +9,15 @@
     body {
       background-color: rgb(36, 36, 36);
     }
-    
-    div {
+
+    p {
+      font-family: Helvetica;
       color: white;
     }
 
-    p {
-      font-family: Helvetica
-    }
-
     h1, h2, h3, h4, h5, h6 {
-      font-family: Helvetica
+      font-family: Helvetica;
+      color: white;
     }
 
     .center-text {
@@ -44,20 +42,38 @@
       border-radius: 10px;
       background-color: rgb(54, 54, 54);
       text-align:center;
-      width: 31vw;
-      height: 10vw;
+      width: 30vw;
+      height: 20vh;
     }
-  
+
+    .about-me-gridbox {
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr;
+      padding: 5px;
+      margin-top: 3%;
+      gap: 2em;
+    }
+
+    .about-me-insidegrid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+
     .close-text {
       margin-bottom: 5px;
       margin-top: 10px;
     }
+
+   /* .grid-entire-page {
+      grid-template-columns: 1fr minmax(auto, 99%);
+    } */
 
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2em;
       grid-auto-rows: auto;
+      
     }
 
     .heading-grid {
@@ -70,60 +86,102 @@
       height: auto;
     }
 
+    .small-image {
+      width: 50%;
+      height: auto;
+    }
   </style>
     
 
   <body>
+    <!--HEADING SECTION START-->
     <div>
       <div class="heading-grid">
-        <p><a href="https://shwimmy-james-shwee.github.io/" style="text-decoration: none; color: white;">HOME</a></p>
+        <p><a href="https://shwimmy-james-shwee.github.io/index.html" style="text-decoration: none; color: white;">HOME</a>
+           <a href="#blog-snippet-section" style="text-decoration: none; color: white; margin-left: 10px;">BLOG</a> 
+        </p>
         <h1 class="grey-red-titlebox">Welcome To James' Blog</h1> 
-        <img class="tiny-image" style="justify-self: right;" src="https://media.giphy.com/media/YGIpIZjgxL68w/giphy.gif" alt="this was meant to be a cool gif, oh well.">
+        <img class="tiny-image" style="justify-self: right;" src="https://media.tenor.com/images/28f6cf0ba94a41aa6e89a14585356300/tenor.gif" alt="this was meant to be a cool gif, oh well.">
       </div>
 
-      <h3 class="center-text"> This is the homepage for my ever-evolving blog, a place for blogging as well as a testing-ground for my skills.</p>
-      <h3 class="center-text"> Below you'll be able to find a breakdown of all my blog posts, give any a click to see the full blog entry. </p>
+      <h4 class="center-text" style="margin-top: -3px;"> This is the homepage for my ever-evolving blog, a place for blogging as well as a testing-ground for my skills.</h4>
     </div>
+    <!--HEADING SECTION END-->
 
-    <div class="grid">
 
-      <!--STARTING BELOW, COPY AND PASTE NEW TEMPLATES ABOVE OLDER ONES TO CREATE A DATED LIST IN DECENDING ORDER-->
 
-      <a style="text-decoration:none;" href="#"> 
-        <div class="homepage-snipit-box ">
-          <h3 class="close-text">entry 3</h3>
-          <p class="close-text">date</p>
-          <p>entry brief</p>
+
+    <!--ABOUT ME SECTION START-->
+    <div class="about-me-gridbox">
+      <div><!--empty grid seciton--></div>
+        <div style="background-color: rgb(54, 54, 54); padding: 20px; border: rgb(54, 54, 54) outset 3px;">
+          <h2 style="margin-top: 1%; text-align: center;">About Me</h2>
+          <p>Hey! i'm James, a 22 year old up and coming Web Developer.</p>
+          <p>To give you a little bit of an insight into my life, at the end of 2020 i completed a conjoint degree in marketing and information systems (with more passion for 
+            the information systems side) yet surprisingly couldnt find any work relating to my study (i mainly attribute this to the focus of my degree being on
+            relatively high level strategic and design concepts, which unsurprisingly arent areas that graduates with no experience tend to get hired in). Hence i'm now undergoing
+            the dev acadamy web development course in an attempt to upskill and ultimately get my foot in the door.
+          <div class="about-me-insidegrid">
+            <p>i would say i have two main interests at the momemnt which take up most of my free time when im not with my friends. One of those is being an amateur disc jockey 
+              (or a bedroom DJ in other terms), dabbling in varius sub genres of House music (Tech house, melodic house, disco house, comercial house) as well as Techno. the other 
+              interest of mine would be sinking time into various video games (this interest tends to come in waves however, depending on whether 
+              any games interest me at the current point in time)  </p>
+            <img class="small-image" style="margin-left: 25%;" src="https://shwimmy-james-shwee.github.io/images/james-photo-india.jpg" alt="A picture of myself">
+          </div>
         </div>
-
-      <a style="text-decoration:none;" href="#"> 
-        <div class="homepage-snipit-box ">
-          <h3 class="close-text">A little About Me</h3>
-          <p class="close-text">21/04/21</p>
-          <p>entry brief</p>
-        </div>
-
-    
-      <a style="text-decoration:none;" href="https://shwimmy-james-shwee.github.io/blog/values-strengths-limitations.html"> 
-        <div class="homepage-snipit-box ">
-          <h3 class="close-text">My Values, Strengths, and Limitations</h3>
-          <p class="close-text">15/04/21</p>
-          <p>An informal discussion of some of my current personal characteristics.</p>
-        </div>
-    
-
-    <!--
-      <a style="text-decoration:none;" href="#"> 
-        <div class="homepage-snipit-box ">
-          <h3 class="close-text">entry 2</h3>
-          <p class="close-text">date</p>
-          <p class="close-text">entry brief</p>
-        </div>
-
-    -->
+      <div><!--empty grid section--></div>
 
     </div>
-  
+    <!--ABOUT ME SECTION END-->
+
+
+
+
+    <!--BLOG SNIPPET SECTION STARTS HERE-->
+    <div>
+      <h3 id="blog-snippet-section" class="center-text" style="margin-top: 3%;">Below you'll be able to find a breakdown of all my blog posts, give any a click to see the full 
+        blog entry.</h3>
+      
+      <div class="grid">
+
+        <!--STARTING BELOW, COPY AND PASTE NEW TEMPLATES ABOVE OLDER ONES TO CREATE A DATED LIST IN DECENDING ORDER-->
+
+        <a style="text-decoration:none;" href="#"> 
+          <div class="homepage-snipit-box ">
+            <h3 class="close-text">entry 3</h3>
+            <p class="close-text">date</p>
+            <p>entry brief</p>
+          </div>
+
+        <a style="text-decoration:none;" href="#"> 
+          <div class="homepage-snipit-box ">
+            <h3 class="close-text">A little About Me</h3>
+            <p class="close-text">21/04/21</p>
+            <p>entry brief</p>
+          </div>
+
+      
+        <a style="text-decoration:none;" href="https://shwimmy-james-shwee.github.io/blog/values-strengths-limitations.html"> 
+          <div class="homepage-snipit-box ">
+            <h3 class="close-text">My Values, Strengths, and Limitations</h3>
+            <p class="close-text">15/04/21</p>
+            <p>An informal discussion of some of my current personal characteristics.</p>
+          </div>
+      
+
+        <!-- TEMPLATE
+        <a style="text-decoration:none;" href="#"> 
+          <div class="homepage-snipit-box ">
+            <h3 class="close-text">entry 2</h3>
+            <p class="close-text">date</p>
+            <p class="close-text">entry brief</p>
+          </div>
+
+        -->
+
+      </div>
+    </div>
+    <!--BLOG SNIPPET SECTION ENDS HERE-->
 
   </body>
 </html>
