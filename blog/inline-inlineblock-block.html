@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>James' Blog</title>
+    <link href="/styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <style>
+      body {
+      background-color: rgb(36, 36, 36);
+    }
+ 
+    p {
+      font-family: Helvetica;
+      color: white;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Helvetica;
+      color: white;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .grey-red-titlebox {
+      border-color: rgb(78, 0, 0);
+      border-width: 3px;
+      border-style: solid;
+      border-radius: 10px;
+      text-align:center;
+      background-color: rgb(54, 54, 54);
+      color: white;
+      padding: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+      grid-auto-rows: auto;
+    }
+
+    .grid > div {
+      border: rgb(5, 0, 78) solid 3px;
+      background-color: rgb(54, 54, 54);
+    }
+
+    .grid-blog {
+      display: grid;
+      grid-template-columns: 1fr 8fr 1fr;
+      gap: 1em;
+      grid-auto-rows: auto;
+    }
+
+    .dark-background {
+      background-color: rgb(36, 36, 36);
+    }
+
+    .heading-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      
+    }
+
+    .tiny-image {
+      width: 50px;
+      height: auto;
+    }
+
+    .medium-image {
+      width: 50%;
+      height: auto;
+    }
+
+    .redtext {
+        color: rgb(255, 0, 0);
+    }
+
+    .paragraph-gap {
+        margin-top: 40px;
+    }
+
+  </style>
+
+  <body>
+    
+    <div>
+        <div class="heading-grid">
+            <p>
+            <a href="https://shwimmy-james-shwee.github.io/index.html" style="text-decoration: none; color: white;">HOME</a>
+            <a href="https://shwimmy-james-shwee.github.io/index.html#blog-snippet-section" style="text-decoration: none; color: white; margin-left: 10px;">BLOG</a>
+
+            </p>
+            <h1 class="grey-red-titlebox">James' Blog</h1> 
+            <img class="tiny-image" style="justify-self: right;" src="https://media.tenor.com/images/28f6cf0ba94a41aa6e89a14585356300/tenor.gif" alt="this was meant to be a cool gif, oh well.">
+        </div>
+            <h2 class="center-text" style="margin-top: -3px;">Display: inline VS inline-block VS block</h2>
+    </div>
+
+    <div class="grid-blog">
+       <div><!--empty grid section--></div>
+
+        <div style="background-color: rgb(54, 54, 54); padding: 20px; border: rgb(54, 54, 54) outset 3px;">
+            <h3>Introduction</h3>
+            <p style="font-style: italic;">As a disclaimer I first must mention, considering that I have only been coding in HTML and CSS for one week at the time of writing this, most of the 
+                content in this blog entry is not first-hand knowledge (being that I knew about it prior to writing). Rather most of the information has been researched and gathered from 
+                external sources. i should also note the example code used to aid my explanation originated from 
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1" target="_blank" style="color: white;">w3schools</a></p>
+            <p>Within CSS, the <span class="redtext">display: inline</span>, <span class="redtext">inline-block</span>, and <span class="redtext">block</span> statement have several similarities with one another, 
+                all being used to format the display of boxes in alignment with the CSS box model (you can read more about that 
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank" style="color: white;">here</a>)
+                . Because these aforementioned statements only focus on the formatting and display of boxes many of the 
+                aspects that would be applied to the box model such as border and background colour can still be applied in the same way they normally would. However, one of the main 
+                differences between <span class="redtext">inline</span>, <span class="redtext">inline-block</span>, and <span class="redtext">block</span>, besides their general format/display characteristics, is how they interact with given padding and margin statements.</p>
+       
+            <h3 class="paragraph-gap">Display: inline</h3>
+            <p>Using <span class="redtext">display: inline</span>, will produce the elements it is applied to “inline” or alongside other elements that surround it. This can be seen 
+                below in the placeholder text where “Aliquam” and “veneatis” are both applied to their own box, inline with one another and the rest of the text (the code used to 
+                create this can also be seen below).</p>
+            
+            <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="james-pearce-the-scripter" data-slug-hash="ExZGmKg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ExZGmKg">
+                <span>See the Pen <a href="https://codepen.io/james-pearce-the-scripter/pen/ExZGmKg">
+                ExZGmKg</a> by James Pearce (<a href="https://codepen.io/james-pearce-the-scripter">@james-pearce-the-scripter</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            
+            <p>you might have also noticed that within the <span style="color: rgb(233, 213, 35);">span.a</span> class the width and height have been set at 100px yet the output 
+                does not display thi (this is also the same with top and bottom margins), this is one of the characteristics of using <span class="redtext">display: inline</span>, often 
+                meaning that the element can overlap with other text above or below (depending on the texts/other elements spacing and margin)</p>
+       
+       
+            <h3 class="paragraph-gap">Display: inline-block</h3> 
+            <p>Using <span class="redtext">display: inline-block</span> combines the best of both worlds, allowing one to keep elements “inline” or alongside others, as well as 
+                allowing for a set of more precise characteristics such as width and height as well as margins and padding. Below you will notice that the class span.b is identical 
+                to span.a, yet now the height and width elements have been honoured and applied.</p>
+
+            <p class="codepen" data-height="311" data-theme-id="dark" data-default-tab="html,result" data-user="james-pearce-the-scripter" data-slug-hash="yLgGMdd" style="height: 311px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="yLgGMdd">
+                <span>See the Pen <a href="https://codepen.io/james-pearce-the-scripter/pen/yLgGMdd">
+                yLgGMdd</a> by James Pearce (<a href="https://codepen.io/james-pearce-the-scripter">@james-pearce-the-scripter</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            
+            <p class="paragraph-gap">One common use for <span class="redtext">inline-block</span> is to display a list of items horizontally instead of vertically, such as horizontal navigation links at 
+                the top of a website. This can be seen below</p>
+
+            <p class="codepen" data-height="271" data-theme-id="dark" data-default-tab="html,result" data-user="james-pearce-the-scripter" data-slug-hash="oNBJWLe" style="height: 271px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="oNBJWLe">
+                <span>See the Pen <a href="https://codepen.io/james-pearce-the-scripter/pen/oNBJWLe">
+                oNBJWLe</a> by James Pearce (<a href="https://codepen.io/james-pearce-the-scripter">@james-pearce-the-scripter</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+            <h3 class="paragraph-gap">Display: block</h3>
+            <p><span class="redtext">Display: block</span> is identical to inline-block except excludes the inline elements, meaning that a line-break is added after the element 
+                so that no other element will sit next to it. This can be seen below</p>
+
+            <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="james-pearce-the-scripter" data-slug-hash="QWdzvGX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="QWdzvGX">
+                <span>See the Pen <a href="https://codepen.io/james-pearce-the-scripter/pen/QWdzvGX">
+                QWdzvGX</a> by James Pearce (<a href="https://codepen.io/james-pearce-the-scripter">@james-pearce-the-scripter</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+            
+        </div>
+
+       <div><!--empty grid section--></div> 
+    </div>
+
+
+
+  </body>
+
+
+
+</html>
