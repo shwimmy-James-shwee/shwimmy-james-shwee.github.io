@@ -56,6 +56,11 @@
         gap: 1em;
         grid-auto-rows: auto;
       }
+
+      .about-me-insidegrid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      }   
   
       .dark-background {
         background-color: rgb(36, 36, 36);
@@ -75,6 +80,11 @@
       .medium-image {
         width: 50%;
         height: auto;
+      }
+
+      .medium-large-image {
+          width: 70%;
+          height: auto;
       }
   
       .redtext {
@@ -106,11 +116,14 @@
 
             <div style="background-color: rgb(54, 54, 54); padding: 20px; border: rgb(54, 54, 54) outset 3px;">
                 <h3>What Is Emotional Intelligence</h3>
-                <p>When describing EQ (Emotional Quotient or commonly Emotional Intelligence) I would often describe it as sibling to IQ (Intelligence Quotient). Emotional 
+                <div class="about-me-insidegrid">
+                    <p>When describing EQ (Emotional Quotient or commonly Emotional Intelligence) I would often describe it as sibling to IQ (Intelligence Quotient). Emotional 
                     intelligence is apparent in the building of all strong relationships with others but is also equally apparent in helping strengthen the relationship you have 
                     with yourself and your own emotions or feelings, ultimately fostering the ability to rationalise these emotions in order to make informed decisions and more 
                     closely align action with intention. Specifically, EQ guides us to understand, use, and manage one’s own emotions, foster effective communication, diffuse 
                     conflict, overcome challenges, relieve stress, and to show empathy.</p>
+                    <img width="80%" height="auto" style="justify-self: center;" src="https://assets.entrepreneur.com/content/3x2/2000/20190606091510-brain-3269655-1920.jpeg?width=700&crop=2:1" alt="EQ picture">
+                </div>
 
                 <p class="paragraph-gap">As stated by <a href="https://www.helpguide.org/articles/mental-health/emotional-intelligence-eq.htm" target="_blank" style="color: white;">HelpGuide's 
                     mental health article on the topic</a>, Emotional Intelligence is often defined by four attributes: </p>
@@ -131,12 +144,14 @@
                     themselves. Because of this I personally believe that, while it is important to reflect on how you yourself display the above attributes towards others, an equal 
                     amount of learning can come from reflecting on how others display these attributes towards you.</p>
 
-                
                 <h3 class="paragraph-gap">How Is It Different To IQ?</h3>
-                <p>While IQ is concerned with how ‘smart’ someone is in their ability to solve problems, use logic, or communicate complex ideas, EQ is a measure of ability in 
-                    recognizing emotion within yourself and others, and the ability to rationalise and use your awareness of them to guide decisions. EQs ability to identify, 
-                    evaluate, control, and express emotions is not an alternative to IQs ability to determine academic capabilities, rather intended to co-exist and be built off of 
-                    one another.</p>
+                <div class="about-me-insidegrid">
+                    <p>While IQ is concerned with how ‘smart’ someone is in their ability to solve problems, use logic, or communicate complex ideas, EQ is a measure of ability in 
+                        recognizing emotion within yourself and others, and the ability to rationalise and use your awareness of them to guide decisions. EQs ability to identify, 
+                        evaluate, control, and express emotions is not an alternative to IQs ability to determine academic capabilities, rather intended to co-exist and be built off of 
+                        one another.</p>
+                    <img class="medium-large-image" style="justify-self: center;" src="https://www.callcentrehelper.com/images/stories/2020/08/emotional-intelligence-icon-760.png" alt="EQ picture">
+                </div>
 
                 <h3 class="paragraph-gap">Why Is It Important</h3>
                 <p>Whether you describe being successful as success around the workplace or by having a fulfilling life built from fruitful relationships one’s IQ will only ever be 
