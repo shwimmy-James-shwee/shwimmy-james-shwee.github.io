@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="/styles/main.css" rel="stylesheet" type="text/css">
+        <title>James' Blog</title>
+    </head>
+    
+    <style>
+        body {
+        background-color: rgb(36, 36, 36);
+      }
+   
+      p {
+        font-family: Helvetica;
+        color: white;
+      }
+  
+      h1, h2, h3, h4, h5, h6 {
+        font-family: Helvetica;
+        color: white;
+      }
+  
+      .center-text {
+        text-align: center;
+      }
+  
+      .grey-red-titlebox {
+        border-color: rgb(78, 0, 0);
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 10px;
+        text-align:center;
+        background-color: rgb(54, 54, 54);
+        color: white;
+        padding: 10px;
+      }
+  
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        grid-auto-rows: auto;
+      }
+  
+      .grid > div {
+        border: rgb(5, 0, 78) solid 3px;
+        background-color: rgb(54, 54, 54);
+      }
+  
+      .grid-blog {
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        gap: 1em;
+        grid-auto-rows: auto;
+      }
+
+      .about-me-insidegrid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      }   
+  
+      .dark-background {
+        background-color: rgb(36, 36, 36);
+      }
+  
+      .heading-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        
+      }
+  
+      .tiny-image {
+        width: 50px;
+        height: auto;
+      }
+  
+      .medium-image {
+        width: 50%;
+        height: auto;
+      }
+
+      .medium-large-image {
+          width: 70%;
+          height: auto;
+      }
+  
+      .redtext {
+          color: rgb(255, 0, 0);
+      }
+  
+      .paragraph-gap {
+          margin-top: 40px;
+      }
+  
+    </style>
+
+    <body>
+        <div>
+            <div class="heading-grid">
+                <p>
+                <a href="https://shwimmy-james-shwee.github.io/index.html" style="text-decoration: none; color: white;">HOME</a>
+                <a href="https://shwimmy-james-shwee.github.io/index.html#blog-snippet-section" style="text-decoration: none; color: white; margin-left: 10px;">BLOG</a>
+    
+                </p>
+                <h1 class="grey-red-titlebox">James' Blog</h1> 
+                <img class="tiny-image" style="justify-self: right;" src="https://media.tenor.com/images/28f6cf0ba94a41aa6e89a14585356300/tenor.gif" alt="this was meant to be a cool gif, oh well.">
+            </div>
+                <h2 class="center-text" style="margin-top: -3px;">JavaScript and the DOM</h2>
+        </div>
+
+        <div class="grid-blog">
+            <div><!--empty grid section--></div>
+
+            <div style="background-color: rgb(54, 54, 54); padding: 20px; border: rgb(54, 54, 54) outset 3px;">
+              <h3>An analogy to help describe the relation of HTML and CSS to JavaScript</h3>
+              <p>In order to understand JavaScript, and after that the DOM, one must first have a grasp of the relationship between HTML and CSS. In layman’s terms, if someone were 
+                building a house then we would consider HTML to be the basic structure of that house, ultimately being made up of the foundations, the walls, the floors, and the 
+                ceiling. Within that structure CSS would then be used to beautify and flesh out the house by applying paint to the walls, skirting boards, windows, and setting 
+                furniture. In short, HTML provides us with the bare structure while CSS is responsible for making it all look nice and homely. </p>
+              <p>From here we can then introduce JavaScript, which could be described as all the ‘cool’ features of the house. in regard to the house analogy this could be having 
+                spinning ceiling fans, under-floor heating, having the ability to rearrange furniture, or even the ability to renovate the property and remove/add walls.</p>
+
+              <h3>The DOM and how you interact with it</h3>
+              <p>Sticking with the same house analogy for the moment, the DOM or Document Object Model could be likened to a form of blueprint of the house. this blueprint would 
+                not show where each component of the house is meant to go yet would rather act as an ordered list of all the resources or components of the house and how they relate 
+                to each other. An MS paint example of this can be seen below (I am evidently not renowned for my art capabilities) followed by an actual layout of the DOM.</p>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1em;">
+                <img style="justify-self: left;" src="https://shwimmy-james-shwee.github.io/images/DOM-analogy.png" alt="photo analogy of the DOM">
+                <img style="justify-self: right;" src="https://miro.medium.com/max/1524/1*ZVg2USWwvFeRcnT2It99QQ.png" alt="photo of real DOM structure">
+              </div>
+
+
+            </div>
+           
+            <div><!--empty grid section--></div>
+
+
+
+
+
+
+    </body>
+
+</html>
