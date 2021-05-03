@@ -123,15 +123,62 @@
               <p>From here we can then introduce JavaScript, which could be described as all the ‘cool’ features of the house. in regard to the house analogy this could be having 
                 spinning ceiling fans, under-floor heating, having the ability to rearrange furniture, or even the ability to renovate the property and remove/add walls.</p>
 
-              <h3>The DOM and how you interact with it</h3>
+              <h3 class="paragraph-gap">The DOM and how you interact with it</h3>
               <p>Sticking with the same house analogy for the moment, the DOM or Document Object Model could be likened to a form of blueprint of the house. this blueprint would 
                 not show where each component of the house is meant to go yet would rather act as an ordered list of all the resources or components of the house and how they relate 
                 to each other. An MS paint example of this can be seen below (I am evidently not renowned for my art capabilities) followed by an actual layout of the DOM.</p>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1em;">
-                <img style="justify-self: left;" src="https://shwimmy-james-shwee.github.io/images/DOM-analogy.png" alt="photo analogy of the DOM">
-                <img style="justify-self: right;" src="https://miro.medium.com/max/1524/1*ZVg2USWwvFeRcnT2It99QQ.png" alt="photo of real DOM structure">
+                <img style="justify-self: left; height: 300px; width: auto;" src="https://shwimmy-james-shwee.github.io/images/DOM-analogy.png" alt="photo analogy of the DOM">
+                <img style="justify-self: right; height: 300px; width: auto;" src="https://miro.medium.com/max/1524/1*ZVg2USWwvFeRcnT2It99QQ.png" alt="photo of real DOM structure">
               </div>
+              <p class="paragraph-gap">Moving away from the house analogy, you can see in the photo above the tree like structure of the Document Object Model and the types of nodes within it. While in 
+                the context of this blog and the extent of my learning it would be fair to say that there is a direct relationship between the DOM and JavaScript in the way that 
+                JavaScript code can manipulate the structure and contents of the DOM and its nodes (whether directly via the console or imbedded in a websites code), in reality it 
+                would be best described as a polyamorous relationship. This is because the DOM can be manipulated by other languages such as python in way near equal to JavaScript. 
+                This ability to manipulate the DOM is where the magic of JavaScript comes from as it allows aspects of a web page to be modified and manipulated based on a variety 
+                of triggers such as clicking or hovering the mouse over an element, and most importantly, without having to reload the page. In the context of the house analogy, 
+                this could be compared to being able to move a window or a wall without having to build a whole new house.</p>
 
+                <h3 class="paragraph-gap">Control flow and loops within JavaScript</h3>
+                <p>Two important concepts of JavaScript that can’t be ignored is control flow and loops. Control flow can simply be described as the order in which code is executed, 
+                  a lot of the time this is as simple as code being executed left to right and top to bottom, however at many points in JavaScript one might only want to execute a 
+                  section of code under certain circumstances. This is known as an <b>if</b> or <b>if/else</b> statement, this would follow the rule that <b>if Y</b> 
+                  happens then do <b>ABC</b>, or <b>else if X</b> happens then do <b>XYZ</b>. Trying to keep in line with the house analogy for simplicity, an example could be if 
+                  you were about to leave the house you might first look outside and <b>if</b> it were raining then you would <b>get a coat</b> or <b>else</b> you would 
+                  <b>get your keys and leave</b>. </p>
+                <p>Another way that control flow can be manipulated is through loops. As the name “loops” sounds it is concerned with doing an action (or executing code) over and 
+                  over until a certain condition is met. Again, keeping in line with the house analogy, if you couldn’t find your keys but you know you left them in a jacket pocket 
+                  then you could use a for loop to say that <b>for each jacket</b>, <b>assuming my keys are not found</b>, then <b>search the jacket</b>, if the “keys are not found” 
+                  condition is still true then <b>pick up another jacket</b> and repeat. While the application of a for loop in reality is a tad more complex, this is the best way 
+                  I could describe it to someone not concerned with that reality, I should also note that there is also several more types of loops that differ slightly in their 
+                  execution and conditions.</p>
+
+                <h3 class="paragraph-gap">The difference between arrays and objects</h3>
+                <p>Within JavaScript, in order to store information, one can use arrays and objects. Both of these types of data storage are considered “mutable” which means they 
+                  can be changed once initially set and they can both also store a collection of data rather than just a single piece. This however is where the similarities stop.</p>
+                <p>One difference is how objects tend to focus on a specific ‘thing’ that has several properties of its own, each individual property is known as a <b>“key”</b>, 
+                  and each key has a <b>“value”</b>. For example, the object of <b>pet</b> will have a key of <b>name</b> (with a value of <b>“Rex”</b>), a key of <b>species</b> 
+                  (with a value of <b>“border collie”</b>), and perhaps a key of <b>interests</b> (with a value of <b>“chasing birds”</b>). Compared to this, Arrays tend to focus 
+                  on more of a list format, commonly ones that are ordered but can also be used for unordered lists. For example, if I had a list of <b>goals</b> over the holiday’s 
+                  then I could add <b>“climb a mountain”, “get my license”, “go to the gym”</b>. </p>
+                <p>When retrieving or modifying data, these two approaches to information storage also differ. In the instance you want to find the value of “name” from the pet 
+                  object, one would need to use bracket or dot notation such as <b>pet.name</b> or <b>pet[‘name’]</b> (which would return “Rex”). If someone wanted to change that 
+                  name to fluffy they could enter <b>pet.name = “fluffy”</b>. </p>
+                <p>Accessing data form arrays on the other hand relies on the concept of zero-based indexing, which refers to counting starting with zero instead of one. Using our 
+                  array list of “goals” above we would consider “climb a mountain” to be entry zero, while “get my license” would be entry one, respectively these values would be 
+                  pulled using the name of the array followed by the entry number in closed brackets such as <b>goals[0]</b> or <b>goals[1]</b>. Items within an array can be added 
+                  or removed from the beginning or end of its list by using <b>push (‘entry’)</b> to add items from the back, <b>pop (‘entry’)</b> to remove from the back, 
+                  <b>unshift (‘entry’)</b> to add an item to the front, and <b>shift (‘entry’)</b> to remove one from the front (where ‘entry’ is replaced with the information 
+                  you’re adding or removing).</p>
+
+                <h3 class="paragraph-gap">Functions and why they are useful</h3>
+                <p>A Function within JavaScript refers to a section of code that has been designed to perform a specific task but is also only executed when it is “called” or 
+                  activated by another piece of code or an action. Writing the syntax of a function is relatively simple, starting with the word “function” followed by what you want 
+                  to call that function, such as “Function1”, and then any data that will be passed from where the function is called from into functions code in parentheses 
+                  immediately afterwards (with the functions code itself following wrapped in curly brackets). This example would read <b>“Function Function1(data1, data2) {the code 
+                    to be executed}”</b>. The usefulness of functions and their reusability shines from its acceptance of different data from the calling location, for example in the 
+                    function above if we were to execute the code “data1 + data2” then data1 and data2 could be replaced with any numbers each time the function is called and thus 
+                    produce a unique result without having to “hard code” those numbers in. </p>
 
             </div>
            
